@@ -1,1 +1,50 @@
 @import url(./styles.css);
+
+.carrito-compras{
+    height: 100vh;
+    width: 50%;
+    background-color: var(--color-primario);
+    position: fixed;
+    top: 0;
+    right: -500px;
+    max-width: 500px;
+}
+ 
+.hidden{
+    right: 0;
+}
+ 
+.closeX{
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: brown;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: grid;
+    place-content: center;
+}
+ 
+.compras{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ 
+.unidad{
+    width: 100%;
+    height: 40px;
+    background-color: lawngreen;
+}
+ 
+.total{
+    width: 100%;
+    height: 40px;
+    background-color: purple;
+}
+ 
