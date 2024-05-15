@@ -28,11 +28,10 @@
                 <!--Logo -->
                 <div class="logo">
                     <img src="/imagenes/LOGO.webp" alt="logo de la empresa">
-                    <h2 class="nombreEmpresa">Tennis Shop</h2>
-                </div>
+               </div>
                 <section>
                      <!--Barra de navegación: home, productos, contactenos -->
-                    <div>
+                    <div class="contenedor-menu">
                         <ul class = "menu">
                             <li><a href="#" class="nav-link">Home</a></li>
                             <li><a href="#">Productos</a></li> 
@@ -40,36 +39,43 @@
                         </ul>
                     </div>
                      <!--Carritode compras-->
-                    <div class="carrito">
-                        <button class="carrito">
-                            <img src="/imagenes/carrito.webp" alt="carrito de compras">
-                        </button>
-                    </div>
-                    <div class="slide">
-                        <ul>
-                            <li>
-                              
-                            </li>
-                        </ul>
+                        <div class="carrito">
+                            <button class="carrito">
+                                <img src="/imagenes/carrito.webp" alt="carrito de compras">
+                            </button>
+                        </div>
                     </div>
                 </section>
             </nav>
         </header>
         <section>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+            
+                        <!--Baner carrusel-->
+                        <div class="slide">
+                            <div class="slide-primera">
+                                 <!--Con slide-open controlamos el carrusel-->
+                                <input class="slide-open" type="radio" id="slide-1" name="slide" checked="checked">
+                                <div class="slide-item">
+                                    <img src="/imagenes/slide 1.webp">
+                                </div>
+                                <input class="slide-open" type="radio" id="slide-2" name="slide">
+                                <div class="slide-item">
+                                    <img src="/imagenes/slide 2.webp">
+                                </div>
+                                <input class="slide-open" type="radio" id="slide-3" name="slide">
+                                <div class="slide-item">
+                                    <img src="/imagenes/slide 3.webp">
+                                </div>
+                                     <!--Para navegar en el carrusel-->
+                                <label for="slide-3" class="slide-control prev control-1">‹</label>
+                                <label for="slide-2" class="slide-control next control-1">›</label>
+                                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                                <label for="slide-3" class="slide-control next control-2">›</label>
+                                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                                <label for="slide-1" class="slide-control next control-3">›</label>
+    
+                            </div>
+                        </div>
         </section>
 
         <!-- María Angelica 
