@@ -1,0 +1,88 @@
+@import url(./styles.css);
+
+.contactanos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contactanos h4 {
+    font-size: 25px;
+}
+.formTennis {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.containerInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.containerInput input {
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 2px transparent;
+    outline: none;
+    width: 80%;
+    transition: all ease-in-out .2s;
+}
+
+.containerInput label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: var(--color-cuaternario);
+    transition: all 0.2s ease-in-out;
+}
+
+.containerInput input:focus {
+    border: var(--color-cuaternario) 2px solid
+}
+
+.containerInput input:focus+label,  .containerInput {
+    top: -25%;
+    color: var(--text-color);
+}
+
+.containerInput textarea:focus {
+    border: var(--color-cuaternario) 2px solid
+}
+
+.containerInput textarea:focus + label {
+    top: -10%;
+    color: var(--text-color);
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    width: 80%;
+    outline: none;
+    border: none;
+}
+
+.submitBtn {
+    padding: 10px;
+    width: 130px;
+    border-radius: 70px;
+    border: none;
+    color: var(--color-secundario);
+    background-color: var(--color-cuaternario);
+    font-size: 18px;
+}
+
