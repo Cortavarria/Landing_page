@@ -1,1 +1,37 @@
 @import url(./styles.css);
+
+
+.contenedor_productos {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.contenedor_productos h2{
+    text-align: center;
+}
+
+.product {
+    width: 250px;
+    height: 350px;
+    border: 1px solid #181717;
+    margin-bottom: 30px;
+    padding: 20px;  
+}
+
+.contenedor_image {
+    width: 230px;
+    height: 112px;
+    border: 2px solid red; 
+    margin: 10px;
+}
+
+.info_producto {
+    text-align: justify;  
+}
+
+.info_producto h4 {
+    text-align: center;  
+}
+
