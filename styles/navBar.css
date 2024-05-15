@@ -1,8 +1,14 @@
 @import url(./styles.css);
 
 /*Menú de navegación*/
+
+header {
+    width: 100%;
+    background-color: red;
+}
 nav{
     display: flex;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
     background-color: #DD761C;
@@ -19,10 +25,6 @@ nav{
     width: 100%;
 }
 
-.contenedor-menu{
-    
-
-}
 
 .menu li{
     display: inline-block;

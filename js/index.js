@@ -1,3 +1,4 @@
+// variables que alojan los elementos HTML
 const carroComprasMod = document.getElementById("carro-compras")
 const close = document.getElementById("close")
 const carCompras = document.getElementById("car-compras")
@@ -5,28 +6,33 @@ const productos = document.getElementsByClassName('product')
 const productosContenedor = document.getElementById('productoContenedor')
 const unity = document.getElementById('unity')
 
-console.log(productos[0])
- 
+
+//  mostrar carro de compras
 carCompras.addEventListener("click", function(){
     carroComprasMod.classList.toggle("hidden")
-    console.log(carroComprasMod.classList);
+
 })
  
+// cerrar carro de compras desde el botón X
 close.addEventListener("click", function(){
     carroComprasMod.classList.toggle("hidden")
-    console.log("click");
+
 })
 
 
-
+// seleccionar producto para comprar
 const seleccionProducto = (e) => {
     let contenedorImg = e.target.parentElement
 
     idProduct = contenedorImg.parentElement
     unity.appendChild(idProduct)
-    console.log(idProduct)
+
 
 }
+
+productosContenedor.addEventListener('click', seleccionProducto)
+
+
 
 // const costoXProducto = () => {
 
@@ -41,4 +47,3 @@ const seleccionProducto = (e) => {
 
 
 
-productosContenedor.addEventListener('click', seleccionProducto)

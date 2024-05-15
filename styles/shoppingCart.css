@@ -29,17 +29,32 @@
  
 .compras{
     width: 100%;
-    height: 100%;
-    background-color: transparent;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.compras::-webkit-scrollbar {
+    appearance: none;
+    background-color: var(--color-cuaternario);
+    width: 8px;
+}
+
+.compras::-webkit-scrollbar-thumb {
+    background-color: var(--color-secundario);
+    border-radius: 4px;
 }
  
 .unidad{
     width: 100%;
-    height: 40px;
-    background-color: lawngreen;
+    align-self: flex-start;
+}
+
+.unidad > .product {
+    scale: 70%;
+    margin-bottom: -100px;
 }
  
 .total{
