@@ -1,1 +1,50 @@
 @import url(./styles.css);
+
+.slide {
+    position: relative;
+    margin-top: 26px;
+}
+.slide-primera {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.slide-control {
+    display: none;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 40px;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
