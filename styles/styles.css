@@ -1,0 +1,44 @@
+:root {
+    --bg-color: rgb(227, 227, 227);
+    --color-primario: #6DC5D1;
+    --color-secundario: #FDE49E;
+    --color-ternario: #FEB941;
+    --color-cuaternario: #DD761C;
+    --text-color: rgb(37, 37, 37);   
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+html::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color: var(--color-cuaternario);
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--color-secundario);
+    width: 8px;
+    border-radius: 8px;
+}
+
+body {
+    background-color: var(--color-primario);
+
+}
+
+.main-container {
+    width: 100vw;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

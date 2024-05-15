@@ -1,0 +1,48 @@
+@import url(./styles.css);
+
+.footer-container {
+    background-color: var(--color-cuaternario);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    color: var(--color-secundario);
+    padding: 30px 20px;
+}
+
+.mapa-sitio-container, .creadoPor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mapa-sitio-container p, .creadoPor-container p, .repo-container p {
+    font-weight: 700;
+}
+
+.mapa-sitio-container ul li, .creadoPor-container ul li {
+    list-style: none;
+    display: grid;
+    place-content: center;
+}
+.mapa-sitio-container ul li a{
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+.repo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.repo-container a{
+    text-decoration: none;
+    color: var(--color-secundario);
+}

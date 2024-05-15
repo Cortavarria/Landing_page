@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="./styles/shoppingCart.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/slides.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Tennis Shop</title>
 </head>
 
 <body>
-    <div>
+    <div class="main-container">
         <!-- Valentina -->
         <header>
             <nav>
@@ -207,6 +212,58 @@
             </section>
         </section>
         <!-- Edwar -->
+        <section class="contactanos">
+            <h4>CONTÁCTANOS</h4>
+
+            <form class="formTennis">
+                <div class="containerInput">
+                    <input type="text" name="nombreForm" id="nombreForm">
+                    <label for="nombreForm">Nombre</label>
+                </div>
+                <div class="containerInput">
+                    <input type="text" name="apellidoForm" id="apellidoForm">
+                    <label for="apellidoForm">Apellido</label>
+                </div>
+                <div class="containerInput">
+                    <input type="text" name="correoForm" id="correoForm">
+                    <label for="correoForm">Correo</label>
+                </div>
+                <div class="containerInput">
+                    <input type="text" name="telefonoForm" id="telefonoForm">
+                    <label for="telefonoForm">Teléfono</label>
+                </div>
+                <div class="containerInput">
+                    <textarea name="msjForm" id="msjForm" rows="6"></textarea>
+                    <label for="msjForm">Mensaje</label>
+                </div>
+                <button class="submitBtn" type="submit">Enviar</button>
+            </form>
+
+        </section>
+        <footer class="footer-container">
+            <section class="mapa-sitio-container">
+                <p>Mapa del Sitio</p>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </section>
+            <section class="creadoPor-container">
+                <p>Creado por:</p>
+                <div>
+                    <ul>
+                        <li>María Angelica Cortavarría</li>
+                        <li>Valentina Ramirez</li>
+                        <li>Edwar León</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="repo-container">
+                <p>Mira como está creado este repo, dale click</p>
+                <a href="https://github.com/Cortavarria/Landing_page">GitHub</a>
+            </section>
+        </footer>
     </div>
 </body>
 

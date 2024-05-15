@@ -1,3 +1,6 @@
+@import url(./styles.css);
+
+
 .contenedor_productos {
     display: flex; 
     flex-direction: column; 
@@ -31,3 +34,4 @@
 .info_producto h4 {
     text-align: center;  
 }
+
