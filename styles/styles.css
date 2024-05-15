@@ -27,7 +27,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background-color: var(--color-primario);
+    background-color: var(--bg-color);
 
 }
 
